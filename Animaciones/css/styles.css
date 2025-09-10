@@ -1,0 +1,34 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxRef {
+    text-align: center;
+    font-size: 4REM;
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    margin: 50px;
+ }
+#box {
+    text-align: center;
+    font-size: 4REM;
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    /* background-image: radial-gradient(arcle,yellow 50%, blue, red); */
+    /* background-image: radial-gradient(farthest-corner at 50% 100%,
+            white 30%,
+            #ff3355 0%,
+            #4433ee 100%,
+            green 20%); */
+    /* transform: translate(500px, 500px); desplaza la posición en x y y */
+    /* transform: rotateX(45deg); desplaza la posición en x y y */
+    /* transition: 2s;
+    &:hover{
+        transform: scale(1.25,1.25); 
+    } */
+ }
