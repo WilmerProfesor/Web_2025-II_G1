@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: #282c34;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    p{
+        font-size: 3rem;        
+    }
+    img{        
+        height: 120px;          
+    }
+}
