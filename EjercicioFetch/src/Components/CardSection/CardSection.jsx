@@ -8,13 +8,15 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 
 const CardSection=({data})=> {
+  console.log(data);
+  
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image="https://static.inaturalist.org/photos/12715503/large.jpg"
+          image={data.image?data.image:"https://static.inaturalist.org/photos/12715503/large.jpg"}
           alt="green iguana"
         />
         <CardContent>
