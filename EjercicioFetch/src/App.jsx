@@ -14,7 +14,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 // ]
 
 const App = () => {
-  const [variable, setVariable] = useState(null)
+  const [variable, setVariable] = useState([])
 
   useEffect(() => {
     fetch('https://rickandmortyapi.com/api/character')
@@ -29,12 +29,12 @@ return (
   <>
     <Header />
     <div id='contenedorBotonTmp'>
-      <Button variant="contained" onClick={() => setVariable('Nuevo valor')}>Cambio</Button>
+      <Button variant="contained" onClick={() => setVariable([])}>Cambio</Button>
     </div>
     <main>
       <section id='cards-news'>
         {/* <CardSection data={variable} /> */}
-        {variable!=null?
+        {variable.length > 0 ?
           variable.map((item)=>{
             return <CardSection data={item} />
           })          
